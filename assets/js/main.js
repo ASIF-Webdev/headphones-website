@@ -44,7 +44,7 @@ let swiperFavorite = new Swiper('.favorite__swiper', {
     loop: true,
     slidesPreview: 'auto',
     centeredSlides: 'auto',
-    grabCursor: 'true',
+    grabCursor: true,
 
     breakpoints: {
         768: {
@@ -81,4 +81,20 @@ const scrollActive = () => {
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true, //Animation repeat
+})
+
+sr.reveal(`.home__social, .favorite__container, .sponser__container, .footer`)
+sr.reveal(`.home__title span:nth-child(1)`, {origin: 'left', opacity: 1})
+sr.reveal(`.home__title span:nth-child(3)`, {origin: 'right', opacity: 1})
+sr.reveal(`.home__tooltip, .home__button `, {origin: 'bottom'})
+sr.reveal(`.about__data`, {origin: 'left'})
+sr.reveal(`.about__img, .model__tooltip`, {origin: 'right'})
