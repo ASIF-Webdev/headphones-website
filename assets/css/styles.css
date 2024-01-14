@@ -361,8 +361,8 @@ img {
   width: 220px;
   display: grid;
   justify-items: center;
-  /* filter: blur(8px);
-  scale: .8; */
+  filter: blur(8px);
+  scale: .8;
   transition: filter .3s, scale .3s;
 }
 

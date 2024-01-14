@@ -42,13 +42,13 @@ window.addEventListener('scroll', blurHeader)
 /*=============== SWIPER FAVORITES ===============*/
 let swiperFavorite = new Swiper('.favorite__swiper', {
     loop: true,
-    slidesPreview: 'auto',
+    slidesPerView: 'auto',
     centeredSlides: 'auto',
     grabCursor: true,
 
     breakpoints: {
         768: {
-            slidesPreview: 3,
+            slidesPerView: 3,
         }
     }
 })
@@ -87,7 +87,7 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
+    duration: 1000,
     delay: 400,
     // reset: true, //Animation repeat
 })
